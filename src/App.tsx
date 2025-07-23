@@ -5,6 +5,7 @@ import About from './components/About';
 import Expertise from './components/Expertise';
 import Services from './components/Services';
 import Workflow from './components/Workflow';
+import Team from './components/Team';
 import CaseStudies from './components/CaseStudies';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -19,6 +20,7 @@ function App() {
       <Expertise />
       <Services />
       <Workflow />
+      <Team />
       <CaseStudies />
       <Testimonials />
       <Contact />
