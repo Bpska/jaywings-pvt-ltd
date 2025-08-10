@@ -18,7 +18,7 @@ const Header = () => {
     { label: 'Services', href: '#services' },
     { label: 'Workflow', href: '#workflow' },
     { label: 'Team', href: '#team' },
-    { label: 'Case Studies', href: '#case-studies' },
+    { label: 'Gallery', href: '#gallery' },
     { label: 'Contact', href: '#contact' }
   ];
 
@@ -29,12 +29,14 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-teal-400 to-sky-500 rounded-lg flex items-center justify-center">
-              <Zap className="w-6 h-6 text-white" />
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/images/logo/logojwt.jpg" 
+              alt="Jaywings Technologies Logo" 
+              className="w-12 h-12 rounded-lg object-cover shadow-lg"
+            />
             <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-teal-400 to-sky-400 bg-clip-text text-transparent">
+              <h1 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
                 Jaywings
               </h1>
               <p className="text-xs text-slate-400">Technologies</p>
@@ -47,12 +49,12 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-slate-300 hover:text-teal-400 transition-colors duration-200 font-medium"
+                className="text-slate-300 hover:text-orange-400 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </a>
             ))}
-            <button className="bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+            <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
               Get Consultation
             </button>
           </nav>
@@ -73,13 +75,13 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="block py-2 text-slate-300 hover:text-teal-400 transition-colors duration-200"
+                className="block py-2 text-slate-300 hover:text-orange-400 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
               </a>
             ))}
-            <button className="w-full mt-4 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 px-6 py-2 rounded-lg font-semibold transition-all duration-200">
+            <button className="w-full mt-4 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-6 py-2 rounded-lg font-semibold transition-all duration-200">
               Get Consultation
             </button>
           </div>

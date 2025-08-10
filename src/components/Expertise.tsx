@@ -13,7 +13,7 @@ const Expertise = () => {
         'Real-time telemetry systems',
         'Autonomous navigation algorithms'
       ],
-      gradient: 'from-teal-600 to-teal-400'
+      gradient: 'from-orange-600 to-orange-400'
     },
     {
       icon: Cog,
@@ -25,7 +25,7 @@ const Expertise = () => {
         'Custom airframe engineering',
         'Miniaturized component integration'
       ],
-      gradient: 'from-sky-600 to-sky-400'
+      gradient: 'from-amber-600 to-amber-400'
     },
     {
       icon: Brain,
@@ -37,7 +37,7 @@ const Expertise = () => {
         'Cloud-based analytics',
         'Intelligent mission planning'
       ],
-      gradient: 'from-teal-600 to-sky-400'
+      gradient: 'from-orange-600 to-amber-400'
     }
   ];
 
@@ -55,7 +55,7 @@ const Expertise = () => {
           {expertiseAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-teal-500/50 transition-all duration-500 hover:transform hover:scale-105"
+              className="group relative bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-orange-500/50 transition-all duration-500 hover:transform hover:scale-105"
             >
               {/* Background Gradient */}
               <div className={`absolute inset-0 bg-gradient-to-br ${area.gradient} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}></div>
@@ -66,7 +66,7 @@ const Expertise = () => {
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors duration-300">
                 {area.title}
               </h3>
               <p className="text-slate-400 mb-6 leading-relaxed">
@@ -77,15 +77,15 @@ const Expertise = () => {
               <ul className="space-y-3">
                 {area.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-teal-400 rounded-full flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-orange-400 rounded-full flex-shrink-0"></div>
                     <span className="text-slate-300 text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               {/* Hover Effect Border */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-teal-500/0 via-teal-500/50 to-sky-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style={{ 
-                background: 'linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.3), transparent)',
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500/0 via-orange-500/50 to-amber-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style={{ 
+                background: 'linear-gradient(90deg, transparent, rgba(251, 146, 60, 0.3), transparent)',
                 maskImage: 'linear-gradient(0deg, transparent 0%, black 2%, black 98%, transparent 100%)'
               }}></div>
             </div>
@@ -95,9 +95,9 @@ const Expertise = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-2 bg-slate-800 px-6 py-3 rounded-full border border-slate-600">
-            <div className="w-2 h-2 bg-teal-400 rounded-full animate-pulse"></div>
+            <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
             <span className="text-slate-300">Ready to innovate with us?</span>
-            <button className="text-teal-400 hover:text-teal-300 font-semibold ml-2 transition-colors duration-200">
+            <button className="text-orange-400 hover:text-orange-300 font-semibold ml-2 transition-colors duration-200">
               Let's talk →
             </button>
           </div>

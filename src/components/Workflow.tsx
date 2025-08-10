@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Lightbulb, Rocket, BarChart3 } from 'lucide-react';
+import { MessageCircle, Lightbulb, Rocket, BarChart3, Users } from 'lucide-react';
 
 const Workflow = () => {
   const steps = [
@@ -8,28 +8,28 @@ const Workflow = () => {
       title: 'Consult',
       subtitle: 'Discovery & site survey',
       description: 'We start with a comprehensive consultation to understand your specific needs and conduct a detailed site survey.',
-      color: 'teal'
+      color: 'orange'
     },
     {
       icon: Lightbulb,
       title: 'Design',
       subtitle: 'Prototyping & testing',
       description: 'Our engineering team creates custom prototypes and conducts rigorous testing to ensure optimal performance.',
-      color: 'sky'
+      color: 'amber'
     },
     {
       icon: Rocket,
       title: 'Deploy',
       subtitle: 'On-site drone operation',
       description: 'Professional deployment with on-site training and support to ensure seamless integration into your operations.',
-      color: 'teal'
+      color: 'orange'
     },
     {
       icon: BarChart3,
       title: 'Maintain',
       subtitle: 'Analytics & service reports',
       description: 'Ongoing maintenance with detailed analytics and regular service reports to maximize efficiency and longevity.',
-      color: 'sky'
+      color: 'amber'
     }
   ];
 
@@ -47,7 +47,7 @@ const Workflow = () => {
         <div className="hidden lg:block">
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-teal-600 via-sky-600 to-teal-600 rounded-full"></div>
+            <div className="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 rounded-full"></div>
             
             {/* Steps */}
             <div className="grid grid-cols-4 gap-8">
@@ -59,13 +59,13 @@ const Workflow = () => {
                   </div>
 
                   {/* Content Card */}
-                  <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-teal-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 mt-12">
+                  <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-orange-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 mt-12">
                     <div className={`w-16 h-16 bg-gradient-to-br from-${step.color}-600 to-${step.color}-400 rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:rotate-12 transition-transform duration-300`}>
                       <step.icon className="w-8 h-8 text-white" />
                     </div>
                     
                     <h3 className="text-2xl font-bold text-white mb-2">{step.title}</h3>
-                    <p className="text-teal-400 font-semibold mb-4">{step.subtitle}</p>
+                    <p className="text-orange-400 font-semibold mb-4">{step.subtitle}</p>
                     <p className="text-slate-400 leading-relaxed">{step.description}</p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Workflow = () => {
             <div key={index} className="relative flex items-start space-x-6">
               {/* Vertical Line */}
               {index < steps.length - 1 && (
-                <div className="absolute left-8 top-20 w-1 h-32 bg-gradient-to-b from-teal-600 to-sky-600 rounded-full"></div>
+                <div className="absolute left-8 top-20 w-1 h-32 bg-gradient-to-b from-orange-600 to-amber-600 rounded-full"></div>
               )}
               
               {/* Step Circle */}
@@ -96,7 +96,7 @@ const Workflow = () => {
                   </span>
                   <h3 className="text-xl font-bold text-white">{step.title}</h3>
                 </div>
-                <p className="text-teal-400 font-semibold mb-3">{step.subtitle}</p>
+                <p className="text-orange-400 font-semibold mb-3">{step.subtitle}</p>
                 <p className="text-slate-400">{step.description}</p>
               </div>
             </div>
@@ -110,9 +110,20 @@ const Workflow = () => {
             <p className="text-slate-400 mb-6 max-w-2xl mx-auto">
               Let's discuss your project requirements and create a custom solution that exceeds your expectations.
             </p>
-            <button className="bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
-              Schedule Consultation
-            </button>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+                Schedule Consultation
+              </button>
+              <a
+                href="https://discord.gg/tVFKqABj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border-2 border-orange-500 hover:bg-orange-500 text-orange-400 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 flex items-center space-x-2"
+              >
+                <Users className="w-5 h-5" />
+                <span>Join Our Discord Community</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

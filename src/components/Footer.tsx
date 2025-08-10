@@ -1,11 +1,9 @@
-import React from 'react';
-import { Zap, Mail, Phone, MapPin, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Zap, Mail, Phone, MapPin, Linkedin, X, Play } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
     { label: 'About Us', href: '#about' },
     { label: 'Services', href: '#services' },
-    { label: 'Case Studies', href: '#case-studies' },
     { label: 'Contact', href: '#contact' }
   ];
 
@@ -20,8 +18,8 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'YouTube' }
+    { icon: X, href: '#', label: 'X' },
+    { icon: Play, href: '#', label: 'YouTube' }
   ];
 
   return (
@@ -32,33 +30,33 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-teal-400 to-sky-500 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-amber-500 rounded-lg flex items-center justify-center">
                 <Zap className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold bg-gradient-to-r from-teal-400 to-sky-400 bg-clip-text text-transparent">
+                <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
                   Jaywings
                 </h3>
                 <p className="text-xs text-slate-400">Technologies PVT LTD</p>
               </div>
             </div>
             <p className="text-slate-400 mb-6 leading-relaxed">
-              Mastering drone flight control and automated cleaning solutions. 
+              Mastering drone flight control and automated cleaning solutions.
               Empowering industries with precision UAV systems since 2019.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-slate-400">
-                <Mail className="w-4 h-4 text-teal-400" />
+                <Mail className="w-4 h-4 text-orange-400" />
                 <span className="text-sm">contact@jaywingstech.com</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-400">
-                <Phone className="w-4 h-4 text-teal-400" />
+                <Phone className="w-4 h-4 text-orange-400" />
                 <span className="text-sm">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-start space-x-3 text-slate-400">
-                <MapPin className="w-4 h-4 text-teal-400 mt-0.5" />
+                <MapPin className="w-4 h-4 text-orange-400 mt-0.5" />
                 <span className="text-sm">123 Innovation Drive, Tech Park, City, State 12345</span>
               </div>
             </div>
@@ -72,7 +70,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-slate-400 hover:text-teal-400 transition-colors duration-200 text-sm"
+                    className="text-slate-400 hover:text-orange-400 transition-colors duration-200 text-sm"
                   >
                     {link.label}
                   </a>
@@ -99,16 +97,16 @@ const Footer = () => {
             <p className="text-slate-400 text-sm mb-4">
               Get the latest updates on drone technology and industry insights.
             </p>
-            
+
             {/* Newsletter Signup */}
             <div className="mb-6">
               <div className="flex">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 bg-slate-800 border border-slate-700 rounded-l-lg text-white placeholder-slate-500 text-sm focus:border-teal-500 focus:outline-none"
+                  className="flex-1 px-4 py-2 bg-slate-800 border border-slate-700 rounded-l-lg text-white placeholder-slate-500 text-sm focus:border-orange-500 focus:outline-none"
                 />
-                <button className="bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 px-4 py-2 rounded-r-lg transition-all duration-200">
+                <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-4 py-2 rounded-r-lg transition-all duration-200">
                   <Mail className="w-4 h-4 text-white" />
                 </button>
               </div>
@@ -122,10 +120,10 @@ const Footer = () => {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center border border-slate-700 hover:border-teal-500 transition-all duration-200 group"
+                    className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center border border-slate-700 hover:border-orange-500 transition-all duration-200 group"
                     aria-label={social.label}
                   >
-                    <social.icon className="w-5 h-5 text-slate-400 group-hover:text-teal-400 transition-colors duration-200" />
+                    <social.icon className="w-5 h-5 text-slate-400 group-hover:text-orange-400 transition-colors duration-200" />
                   </a>
                 ))}
               </div>
@@ -140,13 +138,13 @@ const Footer = () => {
               © 2025 Jaywings Technologys PVT LTD. All rights reserved.
             </div>
             <div className="flex items-center space-x-6 text-slate-400 text-sm">
-              <a href="#" className="hover:text-teal-400 transition-colors duration-200">
+              <a href="#" className="hover:text-orange-400 transition-colors duration-200">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-teal-400 transition-colors duration-200">
+              <a href="#" className="hover:text-orange-400 transition-colors duration-200">
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-teal-400 transition-colors duration-200">
+              <a href="#" className="hover:text-orange-400 transition-colors duration-200">
                 Cookie Policy
               </a>
             </div>

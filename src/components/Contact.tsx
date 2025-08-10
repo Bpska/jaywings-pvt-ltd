@@ -60,29 +60,28 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-600 to-sky-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Email</h4>
-                    <p className="text-slate-400">contact@jaywingstech.com</p>
-                    <p className="text-slate-400">support@jaywingstech.com</p>
+                    <p className="text-slate-400">jaywingstechnology@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sky-600 to-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Phone</h4>
-                    <p className="text-slate-400">+1 (555) 123-4567</p>
-                    <p className="text-slate-400">+1 (555) 765-4321</p>
+                    <p className="text-slate-400">+91 80934 27440</p>
+                    <p className="text-slate-400">+91 63726 63968</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-600 to-sky-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-amber-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -117,10 +116,10 @@ const Contact = () => {
             </div>
 
             {/* Emergency Contact */}
-            <div className="bg-gradient-to-br from-teal-900/20 to-sky-900/20 rounded-xl p-6 border border-teal-500/30">
+            <div className="bg-gradient-to-br from-orange-900/20 to-amber-900/20 rounded-xl p-6 border border-orange-500/30">
               <h4 className="font-semibold text-white mb-2">24/7 Emergency Support</h4>
               <p className="text-slate-300 mb-3">For critical operations and emergency support</p>
-              <p className="text-teal-400 font-semibold">+1 (555) 911-TECH</p>
+              <p className="text-orange-400 font-semibold">+91 80934 27440</p>
             </div>
           </div>
 
@@ -130,7 +129,7 @@ const Contact = () => {
             
             {isSubmitted ? (
               <div className="text-center py-12">
-                <CheckCircle className="w-16 h-16 text-teal-400 mx-auto mb-4" />
+                <CheckCircle className="w-16 h-16 text-orange-400 mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-white mb-2">Message Sent!</h4>
                 <p className="text-slate-400">Thank you for your inquiry. We'll get back to you within 24 hours.</p>
               </div>
@@ -148,7 +147,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all duration-200"
                     placeholder="Your full name"
                   />
                 </div>
@@ -165,7 +164,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all duration-200"
                     placeholder="your.email@company.com"
                   />
                 </div>
@@ -180,7 +179,7 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-200"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all duration-200"
                   >
                     <option value="">Select a service...</option>
                     {services.map(service => (
@@ -201,7 +200,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition-all duration-200 resize-none"
                     placeholder="Tell us about your project requirements..."
                   />
                 </div>
@@ -222,7 +221,7 @@ const Contact = () => {
                     />
                     <label
                       htmlFor="file"
-                      className="w-full flex items-center justify-center px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-slate-400 hover:border-teal-500 cursor-pointer transition-all duration-200"
+                      className="w-full flex items-center justify-center px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-slate-400 hover:border-orange-500 cursor-pointer transition-all duration-200"
                     >
                       <Upload className="w-5 h-5 mr-2" />
                       {formData.file ? formData.file.name : 'Choose file or drag here'}
@@ -236,7 +235,7 @@ const Contact = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 px-6 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 flex items-center justify-center space-x-2"
+                  className="w-full bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-6 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 flex items-center justify-center space-x-2"
                 >
                   <Send className="w-5 h-5" />
                   <span>Send Message</span>

@@ -72,14 +72,14 @@ const Services = () => {
                 onClick={() => setActiveTab(index)}
                 className={`w-full text-left p-6 rounded-xl border transition-all duration-300 ${
                   activeTab === index
-                    ? 'bg-gradient-to-r from-teal-900/50 to-sky-900/50 border-teal-500 shadow-lg shadow-teal-500/20'
+                    ? 'bg-gradient-to-r from-orange-900/50 to-amber-900/50 border-orange-500 shadow-lg shadow-orange-500/20'
                     : 'bg-slate-700/50 border-slate-600 hover:border-slate-500'
                 }`}
               >
                 <div className="flex items-center space-x-4">
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
                     activeTab === index
-                      ? 'bg-gradient-to-br from-teal-600 to-sky-600'
+                      ? 'bg-gradient-to-br from-orange-600 to-amber-600'
                       : 'bg-slate-600'
                   }`}>
                     <service.icon className="w-6 h-6 text-white" />
@@ -93,7 +93,7 @@ const Services = () => {
                     <p className="text-sm text-slate-400">{service.subtitle}</p>
                   </div>
                   <ChevronRight className={`w-5 h-5 transition-transform duration-200 ${
-                    activeTab === index ? 'rotate-90 text-teal-400' : 'text-slate-500'
+                    activeTab === index ? 'rotate-90 text-orange-400' : 'text-slate-500'
                   }`} />
                 </div>
               </button>
@@ -129,7 +129,7 @@ const Services = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   {services[activeTab].features.map((feature, index) => (
                     <div key={index} className="flex items-center space-x-3">
-                      <CheckCircle className="w-5 h-5 text-teal-400 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-orange-400 flex-shrink-0" />
                       <span className="text-slate-300">{feature}</span>
                     </div>
                   ))}
@@ -137,10 +137,10 @@ const Services = () => {
 
                 {/* CTA Button */}
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                  <button className="flex-1 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+                  <button className="flex-1 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
                     Request Quote
                   </button>
-                  <button className="flex-1 border border-slate-600 hover:border-teal-500 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-teal-500/10">
+                  <button className="flex-1 border border-slate-600 hover:border-orange-500 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-orange-500/10">
                     Learn More
                   </button>
                 </div>

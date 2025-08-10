@@ -43,14 +43,14 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-teal-500/50 transition-all duration-500 hover:transform hover:scale-105 relative overflow-hidden"
+              className="group bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-orange-500/50 transition-all duration-500 hover:transform hover:scale-105 relative overflow-hidden"
             >
               {/* Background Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-900/10 to-sky-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-900/10 to-amber-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
               {/* Quote Icon */}
               <div className="relative z-10">
-                <Quote className="w-10 h-10 text-teal-400 mb-6 group-hover:scale-110 transition-transform duration-300" />
+                <Quote className="w-10 h-10 text-orange-400 mb-6 group-hover:scale-110 transition-transform duration-300" />
                 
                 {/* Rating */}
                 <div className="flex items-center space-x-1 mb-6">
@@ -74,7 +74,7 @@ const Testimonials = () => {
                     />
                   </div>
                   <div>
-                    <div className="font-semibold text-white group-hover:text-teal-400 transition-colors duration-300">
+                    <div className="font-semibold text-white group-hover:text-orange-400 transition-colors duration-300">
                       {testimonial.name}
                     </div>
                     <div className="text-sm text-slate-400">
@@ -87,7 +87,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Decorative Element */}
-                <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-teal-600/20 to-sky-600/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-orange-600/20 to-amber-600/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
           ))}
@@ -97,19 +97,19 @@ const Testimonials = () => {
         <div className="mt-20 bg-gradient-to-r from-slate-800 to-slate-700 rounded-2xl p-8 border border-slate-600">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-teal-400 mb-2">100+</div>
+              <div className="text-3xl font-bold text-orange-400 mb-2">100+</div>
               <div className="text-slate-400">Happy Clients</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-sky-400 mb-2">99.9%</div>
+              <div className="text-3xl font-bold text-amber-400 mb-2">99.9%</div>
               <div className="text-slate-400">Uptime</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-teal-400 mb-2">24/7</div>
+              <div className="text-3xl font-bold text-orange-400 mb-2">24/7</div>
               <div className="text-slate-400">Support</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-sky-400 mb-2">5★</div>
+              <div className="text-3xl font-bold text-amber-400 mb-2">5★</div>
               <div className="text-slate-400">Average Rating</div>
             </div>
           </div>

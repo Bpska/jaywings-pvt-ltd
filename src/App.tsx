@@ -6,8 +6,9 @@ import Expertise from './components/Expertise';
 import Services from './components/Services';
 import Workflow from './components/Workflow';
 import Team from './components/Team';
-import CaseStudies from './components/CaseStudies';
-import Testimonials from './components/Testimonials';
+import Gallery from './components/Gallery';
+
+
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -21,8 +22,7 @@ function App() {
       <Services />
       <Workflow />
       <Team />
-      <CaseStudies />
-      <Testimonials />
+      <Gallery />
       <Contact />
       <Footer />
     </div>

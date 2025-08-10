@@ -92,7 +92,7 @@ const CaseStudies = () => {
                     <span>{study.industry}</span>
                   </div>
                 </div>
-                <ExternalLink className="w-6 h-6 text-slate-400 hover:text-teal-400 cursor-pointer transition-colors duration-200" />
+                <ExternalLink className="w-6 h-6 text-slate-400 hover:text-orange-400 cursor-pointer transition-colors duration-200" />
               </div>
             </div>
 
@@ -126,7 +126,7 @@ const CaseStudies = () => {
                 <div className="space-y-3">
                   {study.results.map((result, index) => (
                     <div key={index} className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
                       <span className="text-slate-300 font-semibold">{result}</span>
                     </div>
                   ))}
@@ -134,8 +134,8 @@ const CaseStudies = () => {
               </div>
 
               {/* Quote */}
-              <div className="bg-gradient-to-br from-teal-900/20 to-sky-900/20 p-6 rounded-xl border border-teal-500/30">
-                <Quote className="w-8 h-8 text-teal-400 mb-4" />
+              <div className="bg-gradient-to-br from-orange-900/20 to-amber-900/20 p-6 rounded-xl border border-orange-500/30">
+                <Quote className="w-8 h-8 text-orange-400 mb-4" />
                 <blockquote className="text-slate-300 mb-4 italic">
                   "{study.quote}"
                 </blockquote>
@@ -154,7 +154,7 @@ const CaseStudies = () => {
                 key={index}
                 onClick={() => setCurrentStudy(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                  index === currentStudy ? 'bg-teal-400' : 'bg-slate-600 hover:bg-slate-500'
+                  index === currentStudy ? 'bg-orange-400' : 'bg-slate-600 hover:bg-slate-500'
                 }`}
               />
             ))}

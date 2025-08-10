@@ -9,7 +9,7 @@ const About = () => {
           {/* Logo and Mission */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4 mb-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-sky-500 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-amber-500 rounded-xl flex items-center justify-center">
                 <Zap className="w-8 h-8 text-white" />
               </div>
               <div>
@@ -29,12 +29,12 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="bg-slate-700/50 p-4 rounded-lg border border-slate-600">
-                <Target className="w-8 h-8 text-teal-400 mb-2" />
+                <Target className="w-8 h-8 text-orange-400 mb-2" />
                 <h4 className="font-semibold text-white mb-1">Precision Focus</h4>
                 <p className="text-sm text-slate-400">Custom solutions for unique challenges</p>
               </div>
               <div className="bg-slate-700/50 p-4 rounded-lg border border-slate-600">
-                <Award className="w-8 h-8 text-sky-400 mb-2" />
+                <Award className="w-8 h-8 text-amber-400 mb-2" />
                 <h4 className="font-semibold text-white mb-1">Quality Assured</h4>
                 <p className="text-sm text-slate-400">ISO-standard processes and delivery</p>
               </div>
@@ -46,34 +46,34 @@ const About = () => {
             <h3 className="text-3xl font-bold text-white mb-8">Why Choose Jaywings?</h3>
             
             <div className="space-y-4">
-              <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl border border-slate-600 hover:border-teal-500/50 transition-all duration-300">
+              <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl border border-slate-600 hover:border-orange-500/50 transition-all duration-300">
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-3 h-3 bg-teal-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
                   <h4 className="text-xl font-semibold text-white">5+ Years R&D Excellence</h4>
                 </div>
                 <p className="text-slate-400">Continuous innovation in drone technology and autonomous systems</p>
               </div>
 
-              <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl border border-slate-600 hover:border-sky-500/50 transition-all duration-300">
+              <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl border border-slate-600 hover:border-amber-500/50 transition-all duration-300">
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-3 h-3 bg-sky-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-amber-400 rounded-full"></div>
                   <h4 className="text-xl font-semibold text-white">In-house PX4 & ArduPilot Expertise</h4>
                 </div>
                 <p className="text-slate-400">Deep technical knowledge of leading flight control platforms</p>
               </div>
 
-              <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl border border-slate-600 hover:border-teal-500/50 transition-all duration-300">
+              <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl border border-slate-600 hover:border-orange-500/50 transition-all duration-300">
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-3 h-3 bg-teal-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
                   <h4 className="text-xl font-semibold text-white">ISO-Quality High-Rise Cleaning</h4>
                 </div>
                 <p className="text-slate-400">Professional-grade cleaning services with safety standards</p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-teal-900/20 to-sky-900/20 p-6 rounded-xl border border-teal-500/30">
+            <div className="bg-gradient-to-br from-orange-900/20 to-amber-900/20 p-6 rounded-xl border border-orange-500/30">
               <div className="flex items-center space-x-3 mb-3">
-                <Users className="w-6 h-6 text-teal-400" />
+                <Users className="w-6 h-6 text-orange-400" />
                 <h4 className="text-lg font-semibold text-white">Trusted by Industry Leaders</h4>
               </div>
               <p className="text-slate-300">From Fortune 500 companies to innovative startups, we deliver results that matter.</p>
