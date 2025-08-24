@@ -35,21 +35,21 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
-                  Jaywings
+                  Jaywing
                 </h3>
                 <p className="text-xs text-slate-400">Technologies PVT LTD</p>
               </div>
             </div>
             <p className="text-slate-400 mb-6 leading-relaxed">
               Mastering drone flight control and automated cleaning solutions.
-              Empowering industries with precision UAV systems since 2019.
+              Empowering industries with precision UAV systems since 2023.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-slate-400">
                 <Mail className="w-4 h-4 text-orange-400" />
-                <span className="text-sm">contact@jaywingstech.com</span>
+                <span className="text-sm">jaywingstechnology@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-slate-400">
                 <Phone className="w-4 h-4 text-orange-400" />
@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-3 text-slate-400">
                 <MapPin className="w-4 h-4 text-orange-400 mt-0.5" />
-                <span className="text-sm">123 Innovation Drive, Tech Park, City, State 12345</span>
+                <span className="text-sm">Bharatpur , Bbsr , Odisha</span>
               </div>
             </div>
           </div>

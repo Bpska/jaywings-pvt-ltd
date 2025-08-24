@@ -108,7 +108,7 @@ const Team = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Meet Our Team</h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            The brilliant minds behind Jaywings Technologys - combining decades of experience in aerospace,
+            The brilliant minds behind Jaywing Technologis - combining decades of experience in aerospace,
             AI, and industrial automation to deliver cutting-edge solutions
           </p>
         </div>

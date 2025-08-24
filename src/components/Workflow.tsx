@@ -5,7 +5,7 @@ const Workflow = () => {
   const steps = [
     {
       icon: MessageCircle,
-      title: 'Consult',
+      title: 'Product',
       subtitle: 'Discovery & site survey',
       description: 'We start with a comprehensive consultation to understand your specific needs and conduct a detailed site survey.',
       color: 'orange'
@@ -111,9 +111,7 @@ const Workflow = () => {
               Let's discuss your project requirements and create a custom solution that exceeds your expectations.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-8 py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
-                Schedule Consultation
-              </button>
+              
               <a
                 href="https://discord.gg/tVFKqABj"
                 target="_blank"

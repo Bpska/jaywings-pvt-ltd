@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,21 +23,20 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src="/images/logo/logojwt.jpg" 
-              alt="Jaywings Technologies Logo" 
+            <img
+              src="/images/logo/logojwt.jpg"
+              alt="Jaywings Technologies Logo"
               className="w-12 h-12 rounded-lg object-cover shadow-lg"
             />
             <div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
-                Jaywings
+                Jaywing
               </h1>
               <p className="text-xs text-slate-400">Technologies</p>
             </div>
@@ -54,9 +53,9 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+            {/* <button className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
               Get Consultation
-            </button>
+            </button> */}
           </nav>
 
           {/* Mobile Menu Button */}

@@ -13,7 +13,7 @@ const About = () => {
                 <Zap className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white">Jaywings Technologys</h2>
+                <h2 className="text-2xl font-bold text-white">Jaywing Technologis</h2>
                 <p className="text-slate-400">PVT LTD</p>
               </div>
             </div>
@@ -33,17 +33,17 @@ const About = () => {
                 <h4 className="font-semibold text-white mb-1">Precision Focus</h4>
                 <p className="text-sm text-slate-400">Custom solutions for unique challenges</p>
               </div>
-              <div className="bg-slate-700/50 p-4 rounded-lg border border-slate-600">
+              {/* <div className="bg-slate-700/50 p-4 rounded-lg border border-slate-600">
                 <Award className="w-8 h-8 text-amber-400 mb-2" />
-                <h4 className="font-semibold text-white mb-1">Quality Assured</h4>
-                <p className="text-sm text-slate-400">ISO-standard processes and delivery</p>
-              </div>
+                <h4 className="font-semibold text-white mb-1">Bast Product</h4>
+                <p className="text-sm text-slate-400"></p>
+              </div> */}
             </div>
           </div>
 
           {/* Key Facts */}
           <div className="space-y-6">
-            <h3 className="text-3xl font-bold text-white mb-8">Why Choose Jaywings?</h3>
+            <h3 className="text-3xl font-bold text-white mb-8">Why Choose Jaywing?</h3>
             
             <div className="space-y-4">
               <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl border border-slate-600 hover:border-orange-500/50 transition-all duration-300">

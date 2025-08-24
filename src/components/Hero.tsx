@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-to-r from-white via-orange-100 to-amber-100 bg-clip-text text-transparent">
-              Jaywings Technologys
+              Jaywing Technologies
             </span>
             <br />
             <span className="bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
@@ -49,11 +49,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <button className="group bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+            {/* <button className="group bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
               <Zap className="w-5 h-5" />
               <span>Get a Free Consultation</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </button>
+            </button> */}
             
             <button className="group border-2 border-slate-600 hover:border-orange-400 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 hover:bg-orange-400/10">
               <Play className="w-5 h-5" />
